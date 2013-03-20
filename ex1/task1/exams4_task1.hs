@@ -9,3 +9,4 @@ isPrime deviders n = foldr step True deviders
 primes :: (Integral a) => [a]
 primes = filter (isPrime [2..]) [2..]
 
+main =  putStr $ unlines $ map show $ take 5000 primes
